@@ -1,0 +1,65 @@
+:root{
+    --Main-Color:#ce1212;
+    --Hover-Color:#red;
+    --Font-famile:"Amatic SC", sans-serif;
+    --second-Color:#eeeeee;
+}
+a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+body{
+    background-color: #24353F;
+}
+.Register{ margin-top: 100px;
+   box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+ background-color: #24353F;
+}
+.LoginTittle{
+    font-family :sans-serif;
+    font-size:40px;
+    line-height: 48px;
+    font-weight: 500;
+    color:#17A2B8
+}
+.Register input{
+    color: #FFFF;
+    background-color: transparent;
+   
+}
+.Register input::placeholder{
+    color: #ced4da;
+    font-size: 16px;
+}
+.Register input:focus{
+    color: #FFF;
+   background-color: #24353F;
+}
+.welcome{
+    width: fit-content;
+     box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+.navbar-brand{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color:#FFF;
+}
+.navbar{
+    background-color: #24353F;
+      box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+.navbar-brand:hover, .navbar-brand:focus {
+      color:#FFF;
+}
+.btn{
+    color: #ced4da;
+}
+.btn:hover {
+    color: white;
+  
+}
+@media screen  {
+    
+}
