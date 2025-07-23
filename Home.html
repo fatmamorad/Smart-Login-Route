@@ -13,30 +13,112 @@
     <link rel="stylesheet" href="css/stylr.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="#">SMART LOGIN</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse row" id="navbarSupportedContent">
-          <button class="btn btn-outline-warning ms-md-auto col-lg-1 col-sm-12 mt-sm-2" onclick="SignOut()" type="submit">
-            Log Out
-          </button>
-        </div>
+  <nav class="navbar navbar-expand-lg bg-dark py-3">
+  <div class="container">
+
+    <!-- Logo and Tagline -->
+    <a class="navbar-brand d-flex align-items-center text-white" href="#">
+      <i class="fas fa-cloud fa-2x text-info me-2"></i>
+      <div>
+        <h5 class="mb-0 fw-bold">Weather</h5>
+        <small class="text-white-50">tagline goes here</small>
       </div>
-    </nav>
-    <p id="username" class="text-info welcome p-5 h1 mt-5 mx-auto text-center">
-      Welcome
-    </p>
+    </a>
+
+    <!-- Toggler for mobile -->
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navigation links -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-center gap-3">
+        <li class="nav-item">
+          <a class="nav-link active text-info border border-info rounded-pill px-3 py-1" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Live cameras</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Photos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+    <div class="position-relative overflow-x-hidden secondSection md-h-auto">
+      <div class="WeatherSection "></div>
+      <div class="input-group mx-auto mt-5 mb-5">
+        <input
+          type="search"
+          class="w-75 position-relative rounded-5 mx-auto"
+          id="SearchSection"
+          placeholder="Find Your Location..."
+        />
+        <button
+          class="rounded-5 btn btn-info position-absolute"
+          id="SearchButton"
+        >
+          Find
+        </button>
+      </div>
+      <div id="row-data" class="row  position-relative w-75 mx-auto h-auto">
+      </div>
+      
+      
+    </div>
+
+
+
+
+
+
+    <div class="w-75 mx-auto my-5">
+  <div class="row align-items-center g-3">
+    <div class="col-12 col-md-8">
+      <div class="input-group">
+        <input
+          type="search"
+          class="w-75 position-relative rounded-5 mx-auto"
+          id="SearchSection"
+          placeholder="Enter Your Email to subsecribe..."
+        />
+        <button
+          class="rounded-5 btn btn-info position-absolute"
+          id="SearchButton"
+        >
+          Subsecribe
+        </button>
+      </div>
+    </div>
+    <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end gap-2">
+      <a href="#" class="btn btn-dark rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+        <i class="fab fa-facebook-f text-info"></i>
+      </a>
+      <a href="#" class="btn btn-dark rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+        <i class="fab fa-twitter text-info"></i>
+      </a>
+      <a href="#" class="btn btn-dark rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+        <i class="fab fa-google-plus-g text-info"></i>
+      </a>
+      <a href="#" class="btn btn-dark rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+        <i class="fab fa-pinterest-p text-info"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+   
+       <p class=" footer lead  w-50 mx-auto">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+     
   </body>
   <script src="js/bootstrap.bundle.js"></script>
   <script src="js/script.js"></script>

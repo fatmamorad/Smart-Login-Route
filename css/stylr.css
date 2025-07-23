@@ -1,5 +1,6 @@
 :root{
-    --Main-Color:#ce1212;
+    --{
+        Main-Color:#ce1212;
     --Hover-Color:#red;
     --Font-famile:"Amatic SC", sans-serif;
     --second-Color:#eeeeee;
@@ -11,34 +12,7 @@ a{
 
 body{
     background-color: #24353F;
-}
-.Register{ margin-top: 100px;
-   box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
- background-color: #24353F;
-}
-.LoginTittle{
-    font-family :sans-serif;
-    font-size:40px;
-    line-height: 48px;
-    font-weight: 500;
-    color:#17A2B8
-}
-.Register input{
-    color: #FFFF;
-    background-color: transparent;
-   
-}
-.Register input::placeholder{
-    color: #ced4da;
-    font-size: 16px;
-}
-.Register input:focus{
-    color: #FFF;
-   background-color: #24353F;
-}
-.welcome{
-    width: fit-content;
-     box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+     color:#FFF;;
 }
 .navbar-brand{
     font-size: 20px;
@@ -47,19 +21,89 @@ body{
     color:#FFF;
 }
 .navbar{
-    background-color: #24353F;
+      background-color: #1e202b;
       box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+      padding-block: 50px;
 }
-.navbar-brand:hover, .navbar-brand:focus {
-      color:#FFF;
+.WeatherSection{
+    position: absolute;
+    inset: 0;
+    height: 250px;
+    background-image: url(../WeatherImages/imgi_6_banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.btn{
-    color: #ced4da;
+.navbar-brand{
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFF;
 }
-.btn:hover {
+.navbar-brand-sologo{
+    font-size: 14px;
+    font-weight: 300;
+    color: #FFF;
+}
+.secondSection{
+    height: 100vh;
+    background-color: #1e202b;
+}
+#SearchSection{
+    background-color: #1e202b;
+     padding: 15px;
+     border:0;
+    outline: none;
     color: white;
-  
+    margin-inline: 20px;
 }
-@media screen  {
+#SearchSection:focus{
+    border:0;
+    outline: none;
+}
+#SearchButton{
+    padding: 10px;
+    padding-inline: 30px;
+    z-index: 10;
+   right:12.99%;
+   top:5px
+}
+.day,.date{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #BFC1C8;
+}
+.different-color {
+ background-color: #2d303d; 
+}
+.card-info{
     
+  background-color: #323544;
+}
+.more-info{
+    background-color: #323544;
+}
+.region{
+      font-size: 25px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #BFC1C8;
+}
+.degree{
+     font-size: 4rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #BFC1C8;
+}
+.footer{
+     font-size: 15px;
+     margin-left: 10px;
+}
+.cardd{
+    height: 250px;
+}
+@media screen and (max-width: 1267px) {
+    :root {
+       font-size: 12px;
+    }
 }
